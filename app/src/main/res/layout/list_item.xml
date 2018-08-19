@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/miwok_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tool:text="lutti"/>
+    <TextView
+        android:id="@+id/default_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tool:text="one"/>
+
+</LinearLayout>
