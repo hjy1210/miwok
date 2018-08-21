@@ -3,6 +3,7 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
+    android:background="@color/tan_background"
     android:orientation="horizontal">
     <ImageView
         android:layout_width="@dimen/list_item_height"
@@ -10,6 +11,7 @@
         android:layout_gravity="center_vertical"
         android:id="@+id/image_view"/>
     <LinearLayout
+        android:id="@+id/inner_linearlayout"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

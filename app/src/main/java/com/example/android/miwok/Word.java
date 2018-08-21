@@ -8,7 +8,7 @@ public class Word {
 
     /**
      * Get default translation of the word
-     * @return
+     * @return String
      */
     public String getDefaultTranslation(){
         return mDefaultTranslation;

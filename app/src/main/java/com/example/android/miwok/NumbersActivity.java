@@ -1,5 +1,6 @@
 package com.example.android.miwok;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,7 +30,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("wo’e","九",R.drawable.number_nine));
         words.add(new Word("na’aacha","十",R.drawable.number_ten));
 
-        WordAdapter itemsAdapter = new WordAdapter(this, words);
+        WordAdapter itemsAdapter = new WordAdapter(this, words,R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
