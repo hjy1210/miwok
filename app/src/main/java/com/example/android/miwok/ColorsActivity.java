@@ -37,12 +37,14 @@ public class ColorsActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word currentWord = words.get(position);
                 //if (mMediaPlayer!=null) mMediaPlayer.release();
+                releaseMediaPlayer();
                 mMediaPlayer= MediaPlayer.create(ColorsActivity.this,currentWord.getSoundResourceId());
                 mMediaPlayer.start();
                 mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mp) {
-                        mp.release();
+                        //mp.release();
+                        releaseMediaPlayer();
                     }
                 });
 
@@ -51,4 +53,11 @@ public class ColorsActivity extends AppCompatActivity {
 
 
     }
+    private void releaseMediaPlayer(){
+        if (mMediaPlayer!=null){
+            mMediaPlayer.release();
+            mMediaPlayer=null;
+        }
+    }
+
 }
